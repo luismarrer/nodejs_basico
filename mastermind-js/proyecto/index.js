@@ -74,6 +74,7 @@ function mode2(taskList) {
                 markTaskAsDone(taskList, taskNumber - 1);
                 // Comprobar si estan todas hechas y cerrar el programa
                 if (checkAllDone(taskList)) {
+                    printTaskList(taskList)
                     console.log('Muy bien! Has completado todo el trabajo!');
                     rl.close();
                 } else {
